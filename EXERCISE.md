@@ -89,7 +89,6 @@ The rescue team needs to know the state of your ship.
    - Each option should have a `value` attribute (like "low", "medium", "high")
    - Each option's text content should be: "Low", "Medium", and "High" respectively
 
----
 
 ### Phase 4: Mission Log & Evidence (Fieldset 3)
 Explain the situation and agree to safety protocols.
