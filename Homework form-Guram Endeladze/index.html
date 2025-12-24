@@ -10,59 +10,46 @@
     <iframe id="bg-frame" src="../styles/effect.html"></iframe>
 
     <form method="post" action="#">
+        
+        <!--Pilot Credentials-->
         <fieldset>
             <legend>Pilot Credentials</legend>
             <label for="pilot name">Pilot Name:</label>
             <input type="text" id="pilot name" name="pilot name" placeholder="Enter name" required>
-            <br> <br>
             <label for="acces code">Access code:</label>
             <input type="password" id="acces code" name="acces code" required>
-            <br> <br>
             <label for="command emails">Command Emails:</label>
             <input type="email" id="command emails" name="command emails" required>
-            <br> <br>
-            <div>
-                <button type="submit">INITIATE TRANSMISSION</button>
-                <button type="reset">RESET SYSTEM</button>
-            </div>
         </fieldset>
 
+        <!--Vessel diagnostics-->
         <fieldset>
             <legend>Vessel Diagnostics</legend>
             <label for="damage">Hull Damage (%):</label>
             <input type="number" id="damage" name="damage" required>
-            <br> <br>
             <label for="emergency level">Emergency Level:</label>
             <select id="emergency level" name="emergency level" required>
                 <option value="low">Low</option>
                 <option value="medium">Medium</option>
                 <option value="high">High</option>
             </select>
-            <br> <br>
-            <div>
-                <button type="submit">INITIATE TRANSMISSION</button>
-                <button type="reset">RESET SYSTEM</button>
-            </div>
         </fieldset>
 
+        <!--Mission log and evience-->
         <fieldset>
-            <legend>ission Log & Evidence</legend>
+            <legend>Mission Log & Evidence</legend>
             <label for="sos">SOS Message:</label>
             <textarea id="sos" name="sos" required rows="3"></textarea>
-            <br> <br>
             <div>
-                <button type="submit">INITIATE TRANSMISSION</button>
-                <button type="reset">RESET SYSTEM</button>
+            <input type="checkbox" id="quarantine" name="quarantine" required>
+            <label for="quarantine"> I agree to quarantine protocols.</label>
             </div>
+
+            <button type="submit">INITIATE TRANSMISSION</button>
+            <button type="reset">RESET SYSTEM</button>
+
         </fieldset>
-        <br>
-        
-        <div>
-        <input type="checkbox" id="quarantine" name="quarantine" required>
-        <label for="quarantine">I agree to quarantine protocols.</label>
-    </div>
     </form>
-    
     <script src="./scripts/launch.js"></script>
 </body>
 </html>
